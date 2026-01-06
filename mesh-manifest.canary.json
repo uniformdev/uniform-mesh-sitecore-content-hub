@@ -1,0 +1,27 @@
+{
+  "type": "sitecore-content-hub",
+  "displayName": "Sitecore Content Hub",
+  "logoIconUrl": "https://canary-content-hub-mesh-integration.vercel.app/logo.svg",
+  "badgeIconUrl": "https://canary-content-hub-mesh-integration.vercel.app/badge.svg",
+  "category": "content",
+  "baseLocationUrl": "https://canary-content-hub-mesh-integration.vercel.app",
+  "locations": {
+    "install": {
+      "description": [
+        "Sitecore Content Hub is a content management system that lets you control every aspect of your marketing content, for all your channels, with a single, integrated solution."
+      ]
+    },
+    "settings": {
+      "url": "/settings"
+    },
+    "assetLibrary": {
+      "assetLibraryUrl": "/asset-library",
+      "assetParameterUrl": "/asset-parameter",
+      "assetLibraryLocations": {
+        "asset-preview": {
+          "url": "../asset-preview-dialog"
+        }
+      }
+    }
+  }
+}

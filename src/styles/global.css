@@ -1,0 +1,53 @@
+:root {
+  --utility-caution-icon: #facc15;
+  --utility-caution-title: #854d0e;
+  --utility-caution-container: #fefce8;
+
+  --utility-danger-icon: #f87171;
+  --utility-danger-title: #991b1b;
+  --utility-danger-container: #fef2f2;
+
+  --utility-info-icon: #60a5fa;
+  --utility-info-title: #1e40af;
+  --utility-info-container: #eff6ff;
+
+  --utility-note-icon: var(--gray-400);
+  --utility-note-title: var(--gray-800);
+  --utility-note-container: var(--gray-50);
+
+  --utility-success-icon: #4ade80;
+  --utility-success-title: #166534;
+  --utility-success-container: #f0fdfa;
+}
+
+::-webkit-scrollbar {
+  /* `display: none` hides all scroll bars, but it's better to keep custom one from `ObjectSearch` */
+  /* display: none; */
+  width: 0;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+[data-testid='callout-description'] p {
+  margin: 0px;
+}
+
+.full-width-caption small {
+  max-width: unset !important;
+}
+
+.xs-chip {
+  padding: 0 var(--spacing-xs) !important;
+
+  & span {
+    padding: var(--spacing-xs) var(--spacing-xs) !important;
+  }
+}
+
+/* WORKAROUND: https://linear.app/uniform/issue/UNI-7853/incorrect-emotion-styling-for-mesh-sdk-components */
+input[data-testid='input-search'] {
+  max-height: 40px;
+  min-height: unset;
+}

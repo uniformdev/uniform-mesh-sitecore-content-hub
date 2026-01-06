@@ -1,0 +1,27 @@
+{
+  "type": "sitecore-content-hub",
+  "displayName": "Sitecore Content Hub",
+  "logoIconUrl": "http://localhost:4065/logo.svg",
+  "badgeIconUrl": "http://localhost:4065/badge.svg",
+  "category": "content",
+  "baseLocationUrl": "http://localhost:4065",
+  "locations": {
+    "install": {
+      "description": [
+        "Sitecore Content Hub is a content management system that lets you control every aspect of your marketing content, for all your channels, with a single, integrated solution."
+      ]
+    },
+    "settings": {
+      "url": "/settings"
+    },
+    "assetLibrary": {
+      "assetLibraryUrl": "/asset-library",
+      "assetParameterUrl": "/asset-parameter",
+      "assetLibraryLocations": {
+        "asset-preview": {
+          "url": "../asset-preview-dialog"
+        }
+      }
+    }
+  }
+}
