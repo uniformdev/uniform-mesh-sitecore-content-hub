@@ -9,6 +9,7 @@ import { AuthProvider } from '@hooks';
 import { AuthorizationOverlay } from '@components/auth/AuthorizationOverlay';
 
 import '../styles/global.css';
+import { StorageAccessOverlay } from '@components/auth/StorageAccessOverlay';
 
 const PAGE_WITHOUT_MESH_LOCATION = ['/_error', '/'];
 
@@ -43,11 +44,13 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <MeshApp>
       <IconsProvider>
-        <AuthProvider>
-          <AuthorizationOverlay>
-            <Component {...pageProps} />
-          </AuthorizationOverlay>
-        </AuthProvider>
+        <StorageAccessOverlay>
+          <AuthProvider>
+            <AuthorizationOverlay>
+              <Component {...pageProps} />
+            </AuthorizationOverlay>
+          </AuthProvider>
+        </StorageAccessOverlay>
       </IconsProvider>
     </MeshApp>
   );

@@ -10,3 +10,4 @@ export { useIsInitialLoading } from './useIsInitialLoading';
 export { useGetTaxonomyDefinitions } from './useGetTaxonomyDefinitions';
 export { useGetAssetPublicLinks } from './useGetAssetPublicLinks';
 export { useDeepCompareMemoize } from './useDeepCompareMemoize';
+export { useStorageAccess } from './useStorageAccess';
